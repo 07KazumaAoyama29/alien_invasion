@@ -4,4 +4,7 @@ class Settings:
         #画面に関する設定
         self.screen_width = 1200
         self.screen_height = 800
-        self.bg_color = (230, 230, 230)
+        self.bg_color = (160, 216, 239)
+
+        #playerの設定
+        self.ship_speed = 2.5
