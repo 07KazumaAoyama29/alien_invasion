@@ -25,9 +25,11 @@ class Ship:
     def update(self):
         """移動フラグによって宇宙船の位置を更新する"""
         if self.is_moving_right:
-            self.x += self.settings.ship_speed
+            if self.rect.right < self.screen_rect.right:
+                self.x += self.settings.ship_speed
         if self.is_moving_left:
-            self.x -= self.settings.ship_speed
+            if self.rect.left > 0:
+                self.x -= self.settings.ship_speed
 
         #self.xからrectオブジェクトの位置を更新する(rectに保存されるのは整数部分だけだから。)
         self.rect.x = self.x
