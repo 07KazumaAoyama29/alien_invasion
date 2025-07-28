@@ -33,6 +33,11 @@ class Ship:
 
         #self.xからrectオブジェクトの位置を更新する(rectに保存されるのは整数部分だけだから。)
         self.rect.x = self.x
+
+    def center_ship(self):
+        """宇宙船を画面の中央に配置する"""
+        self.rect.midbottom = self.screen_rect.midbottom
+        self.x = float(self.rect.x)
     
     def blit(self):
         """宇宙船を現在位置に描画する"""

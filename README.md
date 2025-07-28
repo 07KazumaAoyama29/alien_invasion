@@ -12,6 +12,8 @@
 
 ## 更新履歴
 2025.07.27 first commit<br>
+2025.07.28 finish chapter1<br>
+2025.07.28 finish chapter2<br>
 
 **Acknowledgement**  
 This document was prepared with the assistance of Google's Gemini.
