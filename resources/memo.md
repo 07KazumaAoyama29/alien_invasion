@@ -8,3 +8,10 @@
 
 ## pygame の利点
 - ゲーム上のすべての要素を実際の形状にかかわらず長方形(rect)として扱える。当たり判定とか。
+
+# マウスカーソルを非表示にする
+pygame.mouse.set_visible(False)
+
+# 数値を見やすくする方法
+rounded_score = round(self.stats.score, -1)
+score_str = f"{rounded_score:,}"
